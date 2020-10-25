@@ -1,0 +1,6 @@
+aluno;SP1750801;aabbccdd
+aluno;SP1751801;aabbccdd
+aluno;SP1752801;aabbccdd
+aluno;SP1753801;aabbccdd
+professor;SP1754801;aabbccdd
+administrador;SP1755801;aabbccdd

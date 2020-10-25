@@ -1,0 +1,38 @@
+/* Definicoes globais*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-weight: normal;
+  border: none;
+  outline: none;
+}
+
+/*Deixando footer no final da página */
+body {
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+}
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Efeito fade */
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
