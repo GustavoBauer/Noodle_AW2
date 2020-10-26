@@ -21,6 +21,7 @@ for ($i = 0; $i < count($arrayUsuarios); $i++) {
     print_r($usuarioDoArquivo);
     if (trim(strtoupper($usuarioDoArquivo[1])) == strtoupper($matricula) && trim($usuarioDoArquivo[2]) == $senha) {
         $_SESSION['matricula'] = $matricula;
+        $_SESSION['nome'] = trim($usuarioDoArquivo[3]);
         $_SESSION['tipoUsuario'] =  trim($usuarioDoArquivo[0]);
         $_SESSION['logado'] = true;
         break;

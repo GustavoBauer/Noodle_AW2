@@ -2,7 +2,7 @@
 session_start();
 include "../includes/start.php";
 
-if ($_SESSION['logado']){
+if ($_SESSION['logado'] && $_SESSION['tipoUsuario']=="aluno"){
     include "../includes/navbarAluno.php";
 ?>
 

@@ -7,7 +7,7 @@
             <li><a href="badges.html">Components</a></li>
             <li><a href="collapsible.html">Javascript</a></li>
             <li><a href="mobile.html">Mobile</a></li> -->
-            <a class="waves-effect waves-light btn red" href="../actions/sair.php"><i class="material-icons right">exit_to_app</i>Sair</a>
+            <a class="waves-effect waves-light btn red" href="../actions/logout.php"><i class="material-icons right">exit_to_app</i>Sair</a>
 
         </ul>
     </div>

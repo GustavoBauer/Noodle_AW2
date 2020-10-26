@@ -1,0 +1,19 @@
+img {
+  height: 200px;
+}
+
+.card {
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#info {
+  padding: 1rem 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  #info {
+    padding: 1rem 1rem;
+  }
+}
