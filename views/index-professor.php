@@ -54,7 +54,7 @@ if ($_SESSION['logado'] && $_SESSION['tipoUsuario'] == "professor") {
                             for ($j = 0; $j < count($arrayDownloads); $j++) {
                                 $aux = explode(';', $arrayDownloads[$j]);
                                 if ($aux[0] == $informacoes[0]) {
-                                    echo ("<li>- " . $aux[1] . "</li>");
+                                    echo ("<li>- $aux[2] ($aux[1]) </li>");
                                 }
                             }
                             fclose($arquivoAbertoDownloads);
