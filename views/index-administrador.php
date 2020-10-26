@@ -5,11 +5,11 @@ include "../includes/start.php";
 if ($_SESSION['logado'] && $_SESSION['tipoUsuario'] == "administrador") {
     include "../includes/navbarAdministrador.php";
 ?>
-    <link rel="stylesheet" href="../css/principal-administrador.css">
+    <link rel="stylesheet" href="../css/index-usuarios.css">
 
     <div class="container grey lighten-5" id="info">
-        <h4><strong class="deep-orange-text">Bem-vindo!</strong></h4>
-        <h6>Confira as novidades:</h6><br>
+        <h4><strong class="deep-orange-text">Bem-vindo, </strong><?php echo($_SESSION['nome'])?></h4>
+        <h6>Confira os registros do sistema:</h6><br>
         <div class="collection">
             <a href="usuarios-administrador.php" class="collection-item"><span class="new badge" data-badge-caption="novos">100</span>Usuários</a>
             <a href="atividades-administrador.php" class="collection-item"><span class="new badge" data-badge-caption="novos">100</span>Atividades</a>
@@ -38,7 +38,7 @@ if ($_SESSION['logado'] && $_SESSION['tipoUsuario'] == "administrador") {
                     </div>
                     <div class="card-content">
                         <span class="card-title">Atividades</span>
-                        <p>Edite, atualize e remova atividades.</p>
+                        <p>Obtenha uma lista das atividades com os arquivos anexados.</p>
                         <br>
                         <div class="center"><a class="waves-effect waves-light btn" href="atividades-administrador.php"><i class="material-icons right">send</i>ABRIR</a></div>
                     </div>

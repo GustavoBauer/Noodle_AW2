@@ -3,7 +3,7 @@ session_start();
 // session_unset();
 // session_destroy();
 if($_SESSION['logado']){
-    header("Location: views/" . $_SESSION['tipoUsuario'] . "/index.php");
+    header("Location: views/index-" . $_SESSION['tipoUsuario'] . ".php");
 }
 else{
     $_SESSION['logado'] = false;

@@ -1,13 +1,7 @@
-aluno;SP1750801;aabbccdd;Gustavo B
-aluno;SP1751801;aabbccdd;Gustavo C
-aluno;SP1752801;aabbccdd;Gustavo D
-aluno;SP1753801;aabbccdd;Gustavo E
-administrador;SP1755801;aabbccdd;Gustavo G
-aluno;SP1756801;aabbccdd;Gustavo
-professor;SP1759801;aabbccdd;Gustavo Bauer
-administrador;SP1759802;aabbccdd;Gustavo 2001
 aluno;aa1328403;aabbccdd;342342344
-aluno;SP1750805;aabbccdd;Gustavo
+aluno;SP1753801;aabbccdd;Gustavo Z
+aluno;SP1752801;aabbccdd;Gustavo D
+administrador;SP1759801;aabbccdd;Gustavo Bauer Nogueira
+professor;SP1750805;aabbccdd;Gustavo10
+aluno;SP0909092;aabbccdd;gVALLE
 aluno;SP1750807;aabbccdd;Gustavo
-aluno;SP1759805;aabbccdd;sdsadas
-aluno;SP1750801;aabbccdd;3434

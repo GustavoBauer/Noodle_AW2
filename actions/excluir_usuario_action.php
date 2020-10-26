@@ -1,10 +1,7 @@
 <?php
 session_start();
 
-$tipoUsuario = $_POST['tipoUsuario'];
 $matricula = strtoupper($_POST['matricula']);
-$nome = $_POST['nome'];
-$senha = "aabbccdd";
 
 $arquivoUsuarios = "../model/usuarios.txt";
 $tamanhoArquivo = filesize($arquivoUsuarios);
@@ -18,7 +15,9 @@ while (!feof($arquivoAberto)) {
 }
 
 $usuarioRepetido = false;
+$linhaDoArquivo = '';
 for ($i = 0; $i < count($arrayUsuarios); $i++) {
+    $linhaDoArquivo = $arrayUsuarios[$i];
     $usuarioDoArquivo = explode(';', $arrayUsuarios[$i]);
     if (in_array($matricula, $usuarioDoArquivo)) {
         $usuarioRepetido = true;
@@ -26,14 +25,13 @@ for ($i = 0; $i < count($arrayUsuarios); $i++) {
     }
 }
 
-if(!$usuarioRepetido){
-    $conteudo = "\n$tipoUsuario;$matricula;$senha;$nome";
-    fwrite($arquivoAberto, $conteudo);
-    header('Location: ../views/usuarios-administrador.php');
-}else{
-    header('Location: ../views/add-usuario.php');
+if ($usuarioRepetido) {
+    $contents = file_get_contents($arquivoUsuarios);
+    $contents = str_replace($linhaDoArquivo, "", $contents);
+    file_put_contents($arquivoUsuarios, $contents);
 }
 
-fclose($arquivoAberto);
+header('Location: ../views/usuarios-administrador.php');
 
-    
+
+fclose($arquivoAberto);
